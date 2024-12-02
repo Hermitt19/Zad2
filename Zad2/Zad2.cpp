@@ -1,35 +1,23 @@
-﻿
-#include <iostream>
+﻿#include <iostream>
+using namespace std;
 
- //четные
+void FindOddOrEvenNumbers(int N, int OddOrNot)
+{
+	for (int i = OddOrNot; i <= N; i += 2)
+	{
+		cout << i << "\n";
+	}
+}
 
 int main()
 {
-	for (
-		int a = 1; 
-		a < 100; 
-		a++
-		)
-		
-		if (a % 2 == 0)
-			
-			std::cout << a << "\n";
+	int N;
+	cout << "Enter yout number:";
+	cin >> N;
+
+	cout << "Even numbers are: \n";
+	FindOddOrEvenNumbers(N, 2);
+
+	cout << "Odd Numbers are: \n";
+	FindOddOrEvenNumbers(N, 1);
 }
-
-
-//нечетные
-
-
-//int main()
-//{
-//	for (
-//		int a = 1;
-//		a < 100;
-//		a++
-//		)
-//
-//		if (a % 2 != 0)
-//
-//			std::cout << a << "\n";
-//}
-/////
